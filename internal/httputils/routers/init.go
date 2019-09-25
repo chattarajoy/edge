@@ -1,8 +1,9 @@
 package routers
 
 import (
-	"github.com/julienschmidt/httprouter"
 	"net/http"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 type ErrorHandler interface {
