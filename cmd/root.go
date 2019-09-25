@@ -1,12 +1,14 @@
 package cmd
 
 import (
-	"bitbucket.org/qubole/edge/cmd/httpproxy"
 	"fmt"
+	"os"
+
 	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"os"
+
+	"github.com/chattarajoy/edge/cmd/httpproxy"
 )
 
 var (

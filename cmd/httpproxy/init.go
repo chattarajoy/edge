@@ -1,7 +1,7 @@
 package httpproxy
 
 import (
-	"bitbucket.org/qubole/edge/internal/httputils/routers"
+	"github.com/chattarajoy/edge/internal/httputils/routers"
 	"database/sql"
 	"github.com/go-kit/kit/log"
 	_ "github.com/go-sql-driver/mysql"

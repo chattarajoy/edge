@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bitbucket.org/qubole/edge/cmd"
+	"github.com/chattarajoy/edge/cmd"
 )
 
 func main(){

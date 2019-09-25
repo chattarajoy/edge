@@ -1,12 +1,14 @@
 package httpproxy
 
 import (
-	"bitbucket.org/qubole/edge/internal/httputils/routers"
 	"database/sql"
 	"fmt"
+	"net/http"
+
 	"github.com/go-kit/kit/log"
 	"github.com/heptio/workgroup"
-	"net/http"
+
+	"github.com/chattarajoy/edge/internal/httputils/routers"
 )
 
 type serverInput struct {

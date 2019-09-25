@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"bitbucket.org/qubole/edge/pkg/helpers"
+	"github.com/chattarajoy/edge/pkg/helpers"
 	"github.com/julienschmidt/httprouter"
 	"net/http"
 	"strings"

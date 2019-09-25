@@ -1,7 +1,7 @@
 package httpproxy
 
 import (
-	"bitbucket.org/qubole/edge/pkg/mysql"
+	"github.com/chattarajoy/edge/pkg/mysql"
 	"github.com/google/uuid"
 	"net/http"
 	"time"

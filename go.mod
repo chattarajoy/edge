@@ -1,4 +1,4 @@
-module bitbucket.org/qubole/edge
+module github.com/chattarajoy/edge
 
 require (
 	github.com/go-kit/kit v0.9.0
