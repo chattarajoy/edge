@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"bitbucket.org/qubole/edge/cmd/httpproxy"
 	"fmt"
 	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
@@ -11,9 +12,9 @@ import (
 var (
 	configFile string
 	rootCmd    = &cobra.Command{
-		Use:   "uniProxy",
-		Short: "uniProxy is a proxy to various services in Qubole",
-		Long:  "uniProxy or universal Proxy handles proxies of various protocols",
+		Use:   "edge",
+		Short: "edge is a proxy to various services in Qubole",
+		Long:  "edge or universal Proxy handles proxies of various protocols",
 	}
 )
 
@@ -27,6 +28,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 	rootCmd.PersistentFlags().StringVar(&configFile, "config", "", "path to config file")
+	httpproxy.Init(rootCmd)
 }
 
 func initConfig() {
@@ -41,7 +43,7 @@ func initConfig() {
 		}
 
 		viper.AddConfigPath(home)
-		viper.SetConfigName(".uniProxy")
+		viper.SetConfigName(".edge")
 	}
 
 	if err := viper.ReadInConfig(); err == nil {

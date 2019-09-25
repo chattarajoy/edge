@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/chattarajoy/uniProxy/cmd"
+	"bitbucket.org/qubole/edge/cmd"
 )
 
 func main(){
